@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<header>
+    <div class="container">
+        <a href="welcome.html" class="menu-link">Welcome</a>
+        <a href="#contact" class="menu-link">Contact</a>
+        <a href="webet.html" class="menu-link">Projektet e Mia</a>
+        <link rel="stylesheet" href="style.css">
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">Rreth Meje</h2>
+        <p class="about-text">
+            Përshëndetje! Unë jam Amar Ibishi, i lindur më 21.04.2004 dhe i rritur në fshatin Turi të komunës së Bujanocit. <br>
+            Kam qenë gjithmonë i pasionuar pas teknologjisë dhe kam synuar të ndjek ëndrrën time për t’u bërë pjesë e saj. <br>
+            Aktualisht studioj Shkenca Kompjuterike në Kolegjin AAB në Prishtinë dhe kam si hobi fotografinë, ku përpiqem
+            të kap momente të veçanta dhe të sjell diçka të bukur për njerëzit.
+        </p>
+       
+    </div>
+</section>
+
+
+    <section id="portfolio">
+        <div class="container">
+            <h2></h2>
+            <div class="slider">
+                <div class="slides">
+                    <!-- Slide 1 -->
+                    <div class="photo-card">
+                        <img  src="assets/img/2023-06-10 14.44.55.jpeg "  alt="Fotografia 1">
+                        <h1>Amar Ibishi</h1>
+                        <p>0638438155</p>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="photo-card">
+                        <img src="assets/img/aab img.jpg" alt="Fotografia 2">
+                        <h1>Kolegji AAB</h1>
+                        <p>Prishtinës</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="photo-card">
+                        <img  src="assets/img/logo per bio.jpg"  alt="Fotografia 3">
+                        <h1>Amar1_Photography</h1>
+                        <p>Fotograf</p>
+                    </div>
+                </div>
+                <!-- Buttons for navigating the slides -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <h1>Krijimi i Projekteve</h1>
+    <section id="img">
+        <img src="assets/img/011.jpg" alt="foto1" loading="lazy">
+        <p>Dyqani Online</p>
+        <a href="webet.html" target="_blank">
+            <button class="btn">Projektet e Mia</button>
+        </a>
+    </section>
+    
+    
+
+
+
+    
+      
+    
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <form action="mailto:amaribishi13@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Emri" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Mesazhi" required></textarea>
+                <input type="submit" value="Dërgo Mesazhin">
+              </form>
+            <p>Mund të më kontaktoni në:</p>
+            <a href="mailto:amaribishi13@gmail.com" class="contact-email">amaribishi13@gmail.com</a>
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+            <a href="https://www.instagram.com/amaribishi__" target="_blank">
+             <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100088915239499" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+            </a>
+            
+        </div>
+    </section>
+    <section id="location">
+        <div class="container">
+            <h2>Lokacioni Im</h2>
+            <div class="map-container">
+                <!-- Fut këtu kodin nga Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.4911879357433!2d21.717370175817635!3d42.459840928792254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354e53600295fc9%3A0xfb95e7d5f8b3490f!2sAmar1_photography!5e0!3m2!1sen!2srs!4v1727803254234!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <meta name="description" content="Portofoli zyrtar i Amar Ibishi, një student i Shkencave Kompjuterike dhe fotograf me pasion.">
+    <meta name="keywords" content="Amar Ibishi, portfolio, photography, web development, shkenca kompjuterike">
+
+    
+
+    <footer>
+        <p>&copy; 2024 Amar Ibishi. Të gjitha të drejtat të rezervuara.</p>
+    </footer>
+
+    <!-- JavaScript vendoset në fund të dokumentit -->
+    <script src="script.js"></script>
+</body>
+</html>

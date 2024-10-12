@@ -1,0 +1,55 @@
+/* Stilizimi i sfondit të zi për të gjithë faqen */
+body {
+    background-image: url(assets/img/bg02.jpg);  /* Ngjyra e zezë për sfondin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+header a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+
+.welcome-container {
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+}
+
+/* Stilizimi i butonit */
+.portfolio-button {
+    display: inline-block;
+    background-color: #1e90ff; /* Ngjyra e kaltër për butonin */
+    color: #ffffff; /* Teksti i zi */
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #5aa7cd; /* Ndryshimi i ngjyrës kur kalon mbi buton */
+    color: #040405;
+    transform: scale(1.1);
+}

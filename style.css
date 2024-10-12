@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 30px 0;
+}
+
+#about, #portfolio, #projects, #contact {
+    background-color: #111;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border: 3px solid #1e90ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+#contact .contact-email {
+    color: #1e90ff;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 2px solid #1e90ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact .contact-email:hover {
+    background-color: #1e90ff;
+    color: #000;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Për stilin e slide-it */
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.photo-card {
+    min-width: 100%;
+}
+
+
+.photo-card {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.photo-card img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photo-card img:hover {
+    transform: scale(1.1);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {  
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#projects {
+    background-color: #111;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Qendron përmbajtjen brenda */
+}
+
+#projects ul {
+    list-style: none; /* Heq pikat nga lista */
+    padding: 0;
+}
+
+#projects li {
+    font-size: 1.5em; /* Rrit madhësinë e tekstit për projektet */
+    margin: 10px 0;
+    color: #1e90ff; /* Ngjyra e projektit */
+}
+
+#projects h2 {
+    color: #1e90ff; /* Ngjyra e titullit "Projektet" */
+    margin-bottom: 20px;
+}
+
+
+/* Stili për seksionin e kontaktit */
+/* Stilizimi për seksionin e kontaktit */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    font-size: 1.2em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+    color: #0056b3;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Stilizimi për seksionin e lokacionit */
+#location {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#location h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container iframe {
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    width: 80%;
+    height: 450px;
+    max-width: 800px;
+}
+
+
+/* Stili për seksionet e imazheve */
+#img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #111; /* Ngjyrë e errët për sfondin */
+    border-radius: 10px; /* Cepa të rrumbullakosur */
+    max-width: 400px; /* Maksimumi i gjerësisë për çdo seksion */
+    margin: 20px auto; /* Qendrimi në ekran */
+    transition: transform 0.3s ease; /* Efekti i animacionit */
+}
+
+#img h1 {
+    color: #1e90ff;
+    margin-bottom: 15px;
+}
+
+#img img {
+    width: 100%; /* Përshtat imazhin në maksimumin e gjerësisë së seksionit */
+    height: auto; /* Ruaj përmasat natyrale */
+    border: 3px solid #1e90ff; /* Kufiri i ngjyrës së kaltër */
+    border-radius: 10px; /* Cepa të rrumbullakosur për imazhet */
+    transition: transform 0.3s ease; /* Efekti i zmadhimit */
+}
+
+#img p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Efekt zmadhimi kur përdoruesi kalon mbi seksion */
+#img:hover {
+    transform: scale(1.05);
+}
+
+#img img:hover {
+    transform: scale(1.1); /* Zmadhimi i imazhit kur vendoset miu mbi të */
+}
+
+.portfolio-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1.5s ease-in;
+}
+form {
+    background-color: #000000; /* Ngjyra e zezë për sfondin */
+    color: #ffffff; /* Ngjyra e bardhë për tekstin */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #007bff; /* Kalter për kufijtë */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #0056b3; /* Kalter më i thellë për fokusim */
+    outline: none;
+    background-color: #ffffff;
+}
+
+form input[type="submit"] {
+    background-color: #007bff; /* Kalter për butonin */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Ngjyra e errët për efekt hover */
+}
+#project-slider {
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 500px;
+}
+
+.slide p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+/* Përgjithësime për dizajnin */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .container a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 15px;
+    transition: background 0.3s ease;
+}
+
+header .container a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Seksioni Rreth Meje */
+#about {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.profile-pic {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+
